@@ -13,24 +13,24 @@ function setup() {
     }
   
     textSize(40);
-    text("😎", xJogador1, 100);
-    text("❤️", xJogador2, 300);
+    text(";-;", alberto, 100);
+    text(".-.", malro, 300);
     rect(350, 0, 10, 400);
     if (xJogador1 > 350) {
-      text("Jogador 1 venceu!", 50, 200);
+      text("alberto venceu!", 50, 200);
       noLoop();
     }
     if (xJogador2 > 350) {
-      text("Jogador 2 venceu!", 50, 200);
+      text("malro 2 venceu!", 50, 200);
       noLoop();
     }
   }
   
   function keyReleased() {
-    if (key == "a") {
+    if (key == "w") {
       xJogador1 += random(20);
     }
-    if (key == "s") {
+    if (key == "q") {
       xJogador2 += random(20);
     }
   }

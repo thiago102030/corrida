@@ -12,25 +12,25 @@ function draw() {
     background("rgb(238,178,178)");
   }
 
-  textSize(40);, 
-  text(";-;", marlon, 140);
-  text("+-+", alfredo, 250);
+  textSize(40);
+  text(";-;", xJogador1, 100);
+  text("+-+", xJogador2, 300);
   rect(350, 0, 10, 400);
   if (xJogador1 > 350) {
-    text("marlon venceu!", 50, 200);
+    text("Jogador 1 venceu!", 50, 200);
     noLoop();
   }
   if (xJogador2 > 350) {
-    text("alfredo venceu!", 50, 200);
+    text("Jogador 2 venceu!", 50, 200);
     noLoop();
   }
 }
 
 function keyReleased() {
-  if (key == "q") {
+  if (key == "a") {
     xJogador1 += random(20);
   }
-  if (key == "e") {
+  if (key == "s") {
     xJogador2 += random(20);
   }
 }
